@@ -1,0 +1,77 @@
+/*!
+ * Archenemy v1.2.0
+ * Author:  Héctor Torres
+ * App:     Archenemy V.1.0
+ * License: Open source
+ */
+
+ /* Core : General Layout Style */
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+.layout-boxed html,
+.layout-boxed body {
+  height: 100%;
+}
+body{
+  background-image: linear-gradient(
+    rgba(62,20,20,0.4),
+    rgba(0,0,0,1)),
+    url('/av2/src/img/bkg/background-00.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  color: white;
+  height: 100%;
+}
+@font-face {
+  font-family: "Beleren";
+  color: ffffff;
+  src: url(../src/fonts/Beleren.tff);
+}
+/* Layout */
+.wrapper{
+  height: 98%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+.wrapper:before,
+.wrapper:after {
+  content: " ";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+.layout-boxed .wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+  min-height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.layout-boxed {
+  background: url('../img/boxed-bg.jpg') repeat fixed;
+}
+.wrapper .box{
+  display: block;
+  width: 98%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgba(0,0,0,0.35);
+}
+ /* --- */
