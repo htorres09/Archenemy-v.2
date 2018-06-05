@@ -75,3 +75,6 @@ body{
   background-color: rgba(0,0,0,0.35);
 }
  /* --- */
+.box, .ui-tabs-nav {
+  background-color: rgba(0,0,0,0.35);
+}
