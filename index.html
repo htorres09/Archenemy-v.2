@@ -5,8 +5,12 @@
     <!-- link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../av2/src/js/slick.js">
+        
+    </script>
     <link rel="stylesheet" href="../av2/src/css/master.css">
     <link rel="stylesheet" href="../av2/src/css/jqstyles.css">
+    <link rel="stylesheet" href="../av2/src/css/slick.css">
     <title></title>
   </head>
   <body>
@@ -19,7 +23,32 @@
                 <li><a href="#tabPlay">Archenemy Play</a></li>
             </ul>
             <div id="tabSelect">
-                Selección
+                <div class="box-slide box box-widget">
+                    <div class="Deck">
+                        <img src="" alt="Doomsday Machine">
+                        <p>Assambly the Doomsday Machine</p>
+                    </div>
+                    <div class="Deck">
+                        <img src="" alt="Civilization Underfoot">
+                        <p>Trample Civilization Underfoot</p>
+                    </div>
+                    <div class="Deck">
+                        <img src="" alt="Dragonfire">
+                        <p>Scorch the World with Dragonfire</p>
+                    </div>
+                    <div class="Deck">
+                        <img src="" alt="Undead Apocalypse">
+                        <p>Bring About the Undead Apocalypse</p>
+                    </div>
+                    <div class="Deck">
+                        <img src="" alt="Nicol Bolas">
+                        <p>Nicol Bolas, Archenemy</p>
+                    </div>
+                    <div class="Deck">
+                        <img src="" alt="Custom Deck">
+                        <p>Custom Deck</p>
+                    </div>
+                </div>
             </div>
             <div id="tabEdit">
                 Edición
@@ -35,6 +64,32 @@
     <script type="text/javascript">
     $( function() {
         $( "#tabs" ).tabs();
+
+        $('.box-slide').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
       } );
     </script>
   </body>
